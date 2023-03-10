@@ -1,0 +1,21 @@
+
+Request: POST /auth/login at Tue Jan 03 2023 20:42:36 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response: - - ms 
+
+Request: POST /auth/login at Tue Jan 03 2023 20:45:07 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTcxYmU1MTI1Y2EzMWVlMDg3YmQyYiIsImlhdCI6MTY3Mjc4OTUwN30.GMXRvI2PAlNYd_Fy8LWkV8CDISCb44HlqKwtZnLwgYQ"
+}
+Response: 200 400.114 ms 

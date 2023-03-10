@@ -1,0 +1,146 @@
+
+Request: POST /auth/register/user at Mon Dec 26 2022 11:20:10 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"name": "Oscar33",
+	"email": "oscar33@email.com",
+	"age": "34",
+	"password": "1234",
+	"confirmPassword": "1234"
+}
+Response: - - ms 
+
+Request: POST /auth/register/user at Mon Dec 26 2022 11:25:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"name": "Oscar33",
+	"email": "oscar33@email.com",
+	"age": "34",
+	"password": "1234",
+	"confirmPassword": "1234"
+}
+Response Body:
+{
+	"message": "Usuario criado com sucesso!",
+	"user": {
+		"name": "Oscar33",
+		"email": "oscar33@email.com",
+		"age": "34",
+		"image": "20221031_161345.jpg",
+		"password": "$2b$12$nElD7UwH/IWhM6oBjp2LWOBpbQjDw1QakniALdgcP.FpTl8kfhI0K",
+		"_id": "63a9aed662bd7d7ff9b9ead3",
+		"__v": 0
+	}
+}
+Response: 201 478.614 ms 
+
+Request: POST /auth/login at Mon Dec 26 2022 23:31:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar56@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 407.145 ms 
+
+Request: POST /auth/login at Mon Dec 26 2022 23:31:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar56@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 45.875 ms 
+
+Request: POST /auth/login at Mon Dec 26 2022 23:31:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar56@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 43.618 ms 
+
+Request: POST /auth/login at Mon Dec 26 2022 23:31:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar56@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 47.178 ms 
+
+Request: POST /auth/login at Mon Dec 26 2022 23:31:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar56@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 44.925 ms 
+
+Request: POST /auth/login at Mon Dec 26 2022 23:31:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar56@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 44.706 ms 
+
+Request: POST /auth/login at Mon Dec 26 2022 23:35:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTcxYmU1MTI1Y2EzMWVlMDg3YmQyYiIsImlhdCI6MTY3MjEwODUxMX0.s3XJId1CqQZQlnvflcC4591inLUtyDZgtbOJd6Fd6NA"
+}
+Response: 200 371.383 ms 
+
+Request: POST /auth/login at Mon Dec 26 2022 23:35:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTcxYmU1MTI1Y2EzMWVlMDg3YmQyYiIsImlhdCI6MTY3MjEwODUyMn0.wZYmf80Edz_itGboSSdmJKUmKmJh7IxNJzJRXx7MzO4"
+}
+Response: 200 359.626 ms 
+
+Request: POST /auth/login at Tue Dec 27 2022 09:08:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTcxYmU1MTI1Y2EzMWVlMDg3YmQyYiIsImlhdCI6MTY3MjE0Mjg5OH0.GzxLykZe6uy0HbmGgrznUAjEEVuMF7B65Pv3XMVZi9g"
+}
+Response: 200 365.965 ms 

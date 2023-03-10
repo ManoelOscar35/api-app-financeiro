@@ -1,0 +1,125 @@
+
+Request: POST /auth/login at Thu Jan 05 2023 12:41:47 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTcxYmU1MTI1Y2EzMWVlMDg3YmQyYiIsImlhdCI6MTY3MjkzMzMwN30.1tbhwxQ6FoJEXdf1EQ1J-ncjyN-T5ZFgv3oHQCloDP0"
+}
+Response: 200 455.380 ms 
+
+Request: POST /auth/register/user at Thu Jan 05 2023 13:41:56 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"name": "manoel",
+	"email": "manoel@email.com",
+	"age": "34",
+	"password": "1234",
+	"confirmPassword": "1234"
+}
+Response Body:
+{
+	"message": "Usuario criado com sucesso!",
+	"user": {
+		"name": "manoel",
+		"email": "manoel@email.com",
+		"age": "34",
+		"image": "017.jpg",
+		"password": "$2b$12$XY5RbU.sO6o.4ggbTwX.COvu8ziBPCOlw4dRUtHL4avUlDF21iiU6",
+		"_id": "63b6fdd4ccf0d2ba158d11ec",
+		"__v": 0
+	}
+}
+Response: 201 494.987 ms 
+
+Request: POST /auth/login at Thu Jan 05 2023 13:42:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoel@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjZmZGQ0Y2NmMGQyYmExNThkMTFlYyIsImlhdCI6MTY3MjkzNjkzOX0.3JyImN_-i2khtVi4E_T-XB2xD087HFJ-zLr1s3o7-c4"
+}
+Response: 200 358.402 ms 
+
+Request: POST /auth/login at Thu Jan 05 2023 14:16:29 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTcxYmU1MTI1Y2EzMWVlMDg3YmQyYiIsImlhdCI6MTY3MjkzODk4OX0.2yMd7nhclz84uwAHclZet0H9XWH3ZUP45Gq9rv1Ehtc"
+}
+Response: 200 372.768 ms 
+
+Request: POST /auth/login at Fri Jan 06 2023 13:21:33 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTcxYmU1MTI1Y2EzMWVlMDg3YmQyYiIsImlhdCI6MTY3MzAyMjA5M30.2WYT9QsYg8BcY27MEyMD5gM6-tfz4cs1zikdgAvF-cw"
+}
+Response: 200 438.791 ms 
+
+Request: POST /auth/login at Fri Jan 06 2023 13:22:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar33@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTlhZWQ2NjJiZDdkN2ZmOWI5ZWFkMyIsImlhdCI6MTY3MzAyMjEzOX0.0ulhPjXy-mdOA_HO_3oR1oOpjnF-cOYrjZEBHbwMAiA"
+}
+Response: 200 389.387 ms 
+
+Request: POST /auth/login at Fri Jan 06 2023 13:23:03 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "lucas@email.com",
+	"password": "1235"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 79.066 ms 
+
+Request: POST /auth/login at Fri Jan 06 2023 13:23:03 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "lucas@email.com",
+	"password": "1235"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 94.707 ms 
+
+Request: POST /auth/login at Fri Jan 06 2023 13:23:03 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "lucas@email.com",
+	"password": "1235"
+}
+Response Body:
+{
+	"message": "Usuario não encontrado!"
+}
+Response: 404 82.385 ms 

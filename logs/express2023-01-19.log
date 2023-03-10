@@ -1,0 +1,79 @@
+
+Request: POST /auth/login at Thu Jan 19 2023 08:06:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYmViMGZhYjQyNDA5NmEwZjhjYmFmNiIsImlhdCI6MTY3NDEyNjM4Mn0.qe77RhK2ZvIyfBlHJMlwVU-HD-m5hLBWQgx-HoMi83A"
+}
+Response: 200 434.893 ms 
+
+Request: GET /download/image at Thu Jan 19 2023 08:06:22 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "iVBORw0KGgoAAAANSUhEUgAABVYAAAMACAIAAABAXKuVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABC9pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOkYwODY2QUE3Q0Q2RjExRTY4NzQ1RkZBNDE1NjYxQjdFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkE0NkIzN0IzQTRDQTExRUE5NDgwQjBEN0Y3NUQ0QTU5IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkE0NkIzN0IyQTRDQTExRUE5NDgwQjBEN0Y3NUQ0QTU5IiB
+...
+Response: 200 5.015 ms 
+
+Request: POST /auth/revenues at Thu Jan 19 2023 08:06:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"user": {
+		"title": "oscar@email.com",
+		"month": {
+			"title": "Janeiro",
+			"listMonth": {
+				"typeRevenue": "Investimento",
+				"value": 1000,
+				"dateEntry": "2023-01-05T03:00:00.000Z"
+			}
+		}
+	}
+}
+Response Body:
+{
+	"message": "cadastro realizado com sucesso!"
+}
+Response: 201 118.020 ms 
+
+Request: GET /list/revenues at Thu Jan 19 2023 08:06:43 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Janeiro",
+					"listMonth": {
+						"_id": "63c54a4aba17b8317d2017c0",
+						"typeRevenue": "Investimento",
+						"value": "1000",
+						"dateEntry": "2023-01-16T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Janeiro",
+					"listMonth": {
+						"_id": "63c54ac6ba17b8317d2017c2",
+						"typeRevenue": "13° Salário",
+						"value": "1000",
+						"dateEntry": "2023-01-16T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/dan
+...
+Response: 200 91.161 ms 

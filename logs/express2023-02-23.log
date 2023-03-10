@@ -1,0 +1,13 @@
+
+Request: POST /auth/login at Thu Feb 23 2023 22:36:02 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjIyYTljM2ZiNDA1YTcyNmY5ZjI3MiIsImlhdCI6MTY3NzIwMjU2Mn0.k-9zJqqhJncXXbGrq6-vp3tSHhihGQwtoypwLm3kdH0"
+}
+Response: 200 397.711 ms 

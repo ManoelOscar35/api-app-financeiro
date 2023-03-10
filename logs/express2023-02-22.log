@@ -1,0 +1,1471 @@
+
+Request: POST /auth/register/user at Wed Feb 22 2023 14:45:34 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"name": "Manoel Oscar",
+	"email": "manoeloscar@email.com",
+	"age": "35",
+	"password": "1234",
+	"confirmPassword": "1234"
+}
+Response Body:
+{
+	"message": "Usuario criado com sucesso!",
+	"user": {
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"password": "$2b$12$F2cNFRbiL8irGjUGObvkzeKuUV3CeAV5Rgt31YwGdrMEmi/uDe3Be",
+		"_id": "63f654bebbe5fbab44fafe25",
+		"__v": 0
+	}
+}
+Response: 201 523.280 ms 
+
+Request: POST /auth/login at Wed Feb 22 2023 14:45:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjY1NGJlYmJlNWZiYWI0NGZhZmUyNSIsImlhdCI6MTY3NzA4Nzk1Mn0.Xw8scvi2GDIJ39aqKiYve2vwb6XIOBuf2Ia4EbX-yPQ"
+}
+Response: 200 377.411 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 14:45:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 200 19.928 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 14:45:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 200 64.583 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 14:45:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 200 76.054 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 14:45:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 200 108.157 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 14:50:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 26.060 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 14:50:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 102.142 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 14:50:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 75.628 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 14:50:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 86.438 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 14:58:30 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 17.471 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 14:58:30 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 52.128 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 14:58:30 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 68.364 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 14:58:30 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 72.081 ms 
+
+Request: POST /auth/login at Wed Feb 22 2023 15:10:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjY1NGJlYmJlNWZiYWI0NGZhZmUyNSIsImlhdCI6MTY3NzA4OTQxMX0.rqpWY3xR_Eel9R_uvwvgVw0uJngqGhZaanMuDPX8kxk"
+}
+Response: 200 362.194 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 15:10:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 15.086 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 15:10:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 49.051 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 15:10:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 59.510 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 15:10:11 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 65.910 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 15:13:12 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 22.009 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 15:13:12 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 55.042 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 15:13:12 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 58.161 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 15:13:12 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 62.145 ms 
+
+Request: POST /auth/register/user at Wed Feb 22 2023 15:18:35 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"name": "Oscar",
+	"email": "oscar@email.com",
+	"age": "35",
+	"password": "1234",
+	"confirmPassword": "1234"
+}
+Response Body:
+{
+	"message": "Já existe uma conta com esse e-mail!"
+}
+Response: 422 92.913 ms 
+
+Request: POST /auth/login at Wed Feb 22 2023 15:26:14 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjY1NGJlYmJlNWZiYWI0NGZhZmUyNSIsImlhdCI6MTY3NzA5MDM3NH0.NJ2rlfnAXC9fV1zN68i8n8hFsFaODGplfZGCEGNgzYM"
+}
+Response: 200 373.845 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 15:26:14 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 21.091 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 15:26:14 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 44.860 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 15:26:14 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 53.143 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 15:26:14 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 59.336 ms 
+
+Request: POST /auth/login at Wed Feb 22 2023 15:32:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjY1NGJlYmJlNWZiYWI0NGZhZmUyNSIsImlhdCI6MTY3NzA5MDc0N30.qP7FZq-Y6f1CU5mWWbe15UB5B5pv9q5u266Sd9Ez3Sg"
+}
+Response: 200 513.263 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 15:32:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 15.945 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 15:32:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 46.651 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 15:32:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 47.266 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 15:32:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 59.786 ms 
+
+Request: POST /auth/login at Wed Feb 22 2023 15:40:41 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjY1NGJlYmJlNWZiYWI0NGZhZmUyNSIsImlhdCI6MTY3NzA5MTI0MX0.N1ixjLQqbyHd4eHK5mjBfiDQVTVLog__kZwwMydSJlk"
+}
+Response: 200 354.655 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 15:40:41 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 12.981 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 15:40:41 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 46.775 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 15:40:41 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 53.873 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 15:40:41 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 64.408 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 16:20:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 19.385 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 16:20:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 52.296 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 16:20:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 58.579 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 16:20:26 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 65.158 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 16:26:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 17.794 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 16:26:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 50.547 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 16:26:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 59.480 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 16:26:00 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 66.195 ms 
+
+Request: POST /auth/login at Wed Feb 22 2023 16:27:55 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjY1NGJlYmJlNWZiYWI0NGZhZmUyNSIsImlhdCI6MTY3NzA5NDA3NX0.GgtyvhxUMJjCEAwRAVd2WktqW2mE9rJ2m_ywP5Yfy4w"
+}
+Response: 200 356.543 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 16:27:55 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 15.578 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 16:27:55 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 51.811 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 16:27:55 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 53.625 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 16:27:55 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 66.839 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 16:30:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 18.661 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 16:30:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 49.535 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 16:30:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 54.890 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 16:30:38 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 62.271 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 16:41:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 15.327 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 16:41:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 49.506 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 16:41:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 54.548 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 16:41:52 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 67.332 ms 
+
+Request: POST /auth/login at Wed Feb 22 2023 16:47:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjY1NGJlYmJlNWZiYWI0NGZhZmUyNSIsImlhdCI6MTY3NzA5NTIyNn0.uiu7HqBcGt_n33sj9PiAWvCfhMhRluNWiYIf8SgdZ2Y"
+}
+Response: 200 369.160 ms 
+
+Request: GET /download/image at Wed Feb 22 2023 16:47:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 304 12.463 ms 
+
+Request: GET /user/63f654bebbe5fbab44fafe25 at Wed Feb 22 2023 16:47:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "63f654bebbe5fbab44fafe25",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@email.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 304 46.528 ms 
+
+Request: GET /list/revenues at Wed Feb 22 2023 16:47:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238123fb405a726f9f2be",
+						"typeRevenue": "PLR",
+						"value": "1000",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f2384a3fb405a726f9f2c6",
+						"typeRevenue": "Salário",
+						"value": "1800",
+						"dateEntry": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagosti
+...
+Response: 304 53.264 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 16:47:06 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 304 63.575 ms 
+
+Request: POST /auth/debts at Wed Feb 22 2023 16:47:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"user": {
+		"title": "manoeloscar@email.com",
+		"date": "2023-02-22T19:47:48.766Z",
+		"month": {
+			"title": "Fevereiro",
+			"listMonth": {
+				"debt": "Faculdade",
+				"category": "Estudo",
+				"value": 1000,
+				"expirationDate": "2023-02-22T03:00:00.000Z"
+			}
+		}
+	}
+}
+Response Body:
+{
+	"message": "cadastro realizado com sucesso!"
+}
+Response: 201 82.640 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 16:47:48 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "oscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1000",
+						"category": "Casa",
+						"expirationDate": "2023-02-19T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "manoeloscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f67164fa94cf8dfa9d6fd0",
+						"debt": "Faculdade",
+						"value": "1000",
+						"category": "Estudo",
+						"expirationDate": "2023-02-22T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edi
+...
+Response: 200 48.035 ms 
+
+Request: PUT /update/debts/63f238333fb405a726f9f2c2 at Wed Feb 22 2023 16:49:20 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"user": {
+		"title": "manoeloscar@email.com",
+		"month": {
+			"title": "Fevereiro",
+			"listMonth": {
+				"debt": "Aluguel",
+				"category": "Casa",
+				"value": 1800,
+				"expirationDate": "2023-02-22"
+			}
+		}
+	}
+}
+Response Body:
+{
+	"user": {
+		"month": {
+			"listMonth": {
+				"debt": "Aluguel",
+				"category": "Casa",
+				"value": "1800",
+				"expirationDate": "2023-02-22"
+			},
+			"title": "Fevereiro"
+		},
+		"title": "manoeloscar@email.com"
+	},
+	"_id": "63f238333fb405a726f9f2c2",
+	"__v": 0
+}
+Response: 200 61.497 ms 
+
+Request: GET /list/debts at Wed Feb 22 2023 16:49:20 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "manoeloscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f238333fb405a726f9f2c2",
+						"debt": "Aluguel",
+						"value": "1800",
+						"category": "Casa",
+						"expirationDate": "2023-02-22",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		},
+		{
+			"user": {
+				"title": "manoeloscar@email.com",
+				"month": {
+					"title": "Fevereiro",
+					"listMonth": {
+						"_id": "63f67164fa94cf8dfa9d6fd0",
+						"debt": "Faculdade",
+						"value": "1000",
+						"category": "Estudo",
+						"expirationDate": "2023-02-22T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+
+...
+Response: 200 48.460 ms 

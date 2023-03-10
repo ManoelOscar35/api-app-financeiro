@@ -1,0 +1,185 @@
+
+Request: PUT /update/revenues/63c6d9cffa11b98bfb842545 at Mon Jan 30 2023 19:24:54 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"user": {
+		"title": "manoeloscar@email.com",
+		"month": {
+			"listMonth": {
+				"typeRevenue": "Aposentadoria",
+				"value": 1500,
+				"dateEntry": "2023-01-30"
+			}
+		}
+	}
+}
+Response Body:
+{
+	"user": {
+		"user": {
+			"month": {
+				"listMonth": {
+					"typeRevenue": "Aposentadoria",
+					"value": "1500",
+					"dateEntry": "2023-01-30"
+				}
+			},
+			"title": "manoeloscar@email.com"
+		},
+		"_id": "63c6d9cffa11b98bfb842545",
+		"__v": 0
+	}
+}
+Response: 200 108.597 ms 
+
+Request: GET /list/revenues at Mon Jan 30 2023 19:46:19 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": []
+}
+Response: 200 101.249 ms 
+
+Request: POST /auth/revenues at Mon Jan 30 2023 19:46:50 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"user": {
+		"title": "manoeloscar@email.com",
+		"month": {
+			"title": "Janeiro",
+			"listMonth": {
+				"typeRevenue": "Investimento",
+				"value": 1000,
+				"dateEntry": "2023-01-30T03:00:00.000Z"
+			}
+		}
+	}
+}
+Response Body:
+{
+	"message": "cadastro realizado com sucesso!"
+}
+Response: 201 125.603 ms 
+
+Request: GET /list/revenues at Mon Jan 30 2023 19:46:51 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "manoeloscar@email.com",
+				"month": {
+					"title": "Janeiro",
+					"listMonth": {
+						"_id": "63d848da666f7f358437c592",
+						"typeRevenue": "Investimento",
+						"value": "1000",
+						"dateEntry": "2023-01-30T03:00:00.000Z",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 200 86.109 ms 
+
+Request: PUT /update/revenues/63d848da666f7f358437c592 at Mon Jan 30 2023 19:47:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"user": {
+		"title": "manoeloscar@email.com",
+		"month": {
+			"title": "Janeiro",
+			"listMonth": {
+				"typeRevenue": "13° Salário",
+				"value": 2000,
+				"dateEntry": "2023-01-29"
+			}
+		}
+	}
+}
+Response Body:
+{
+	"user": {
+		"user": {
+			"month": {
+				"listMonth": {
+					"typeRevenue": "13° Salário",
+					"value": "2000",
+					"dateEntry": "2023-01-29"
+				},
+				"title": "Janeiro"
+			},
+			"title": "manoeloscar@email.com"
+		},
+		"_id": "63d848da666f7f358437c592",
+		"__v": 0
+	}
+}
+Response: 200 114.908 ms 
+
+Request: GET /list/revenues at Mon Jan 30 2023 19:47:18 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": [
+		{
+			"user": {
+				"title": "manoeloscar@email.com",
+				"month": {
+					"title": "Janeiro",
+					"listMonth": {
+						"_id": "63d848da666f7f358437c592",
+						"typeRevenue": "13° Salário",
+						"value": "2000",
+						"dateEntry": "2023-01-29",
+						"actions": [
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/edit.png",
+							"https://raw.githubusercontent.com/daniloagostinho/curso-angular15-na-pratica/main/src/assets/images/delete.png"
+						]
+					}
+				}
+			}
+		}
+	]
+}
+Response: 200 98.822 ms 
+
+Request: DELETE /delete/revenue/63d848da666f7f358437c592 at Mon Jan 30 2023 19:47:37 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"message": "Receita excluída com sucesso!"
+}
+Response: 200 92.827 ms 
+
+Request: GET /list/revenues at Mon Jan 30 2023 19:47:37 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": []
+}
+Response: 200 81.865 ms 
+
+Request: GET /list/revenues at Mon Jan 30 2023 19:50:29 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": []
+}
+Response: 304 85.289 ms 
+
+Request: POST /auth/login at Tue Jan 31 2023 07:36:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response: - - ms 
+
+Request: POST /auth/login at Tue Jan 31 2023 07:36:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@email.com",
+	"password": "1234"
+}
+Response: - - ms 

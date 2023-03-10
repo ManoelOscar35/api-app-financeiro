@@ -1,0 +1,30 @@
+
+Request: POST /auth/login at Mon Jan 09 2023 17:23:34 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTcxYmU1MTI1Y2EzMWVlMDg3YmQyYiIsImlhdCI6MTY3MzI5NTgxNH0.NXNPTuQvd7g_ntwOAqbhk6yWcihipgyFORfji4mPpo4"
+}
+Response: 200 395.228 ms 
+
+Request: GET /contas at Tue Jan 10 2023 15:14:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Response: 404 47.137 ms 
+
+Request: GET /clientes at Tue Jan 10 2023 15:14:27 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Response: 404 1.788 ms 
+
+Request: POST /contas at Tue Jan 10 2023 15:15:28 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"banco": "Itaú",
+	"nomeTipo": "Conta Corrente",
+	"numConta": "12352-00"
+}
+Response: 404 0.376 ms 
+
+Request: POST /auth/login at Wed Jan 11 2023 07:59:12 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36

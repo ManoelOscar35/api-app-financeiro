@@ -1,0 +1,24 @@
+
+Request: POST /auth/register/user at Sat Dec 24 2022 12:33:57 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Request Body:
+{
+	"name": "Oscar",
+	"email": "oscar@email.com",
+	"age": "34",
+	"password": "1234",
+	"confirmPassword": "1234"
+}
+Response Body:
+{
+	"message": "Usuario criado com sucesso!",
+	"user": {
+		"_id": "63a71be5125ca31ee087bd2b",
+		"name": "Oscar",
+		"email": "oscar@email.com",
+		"age": "34",
+		"image": "20221031_161345.jpg",
+		"password": "$2b$12$iXmGBr7h.OTK1m4ff73xvuzNT9km8Nx4OWggiwAiDLknpwsYP43qC",
+		"__v": 0
+	}
+}
+Response: 201 553.660 ms 

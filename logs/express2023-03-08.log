@@ -1,0 +1,85 @@
+
+Request: POST /auth/login at Wed Mar 08 2023 12:23:42 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "oscar@email.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjIyYTljM2ZiNDA1YTcyNmY5ZjI3MiIsImlhdCI6MTY3ODI4OTAyMn0.LD8YZEvc0TBoZtjuVecjYU5vjwBJOfPEN1JqpEXni-4"
+}
+Response: 200 398.585 ms 
+
+Request: POST /auth/register/user at Wed Mar 08 2023 12:28:55 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Request Body:
+{
+	"name": "Manoel Oscar",
+	"email": "manoeloscar@gmail.com",
+	"age": "35",
+	"password": "1234",
+	"confirmPassword": "1234"
+}
+Response Body:
+{
+	"message": "Usuario criado com sucesso!",
+	"user": {
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@gmail.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"password": "$2b$12$don/IQk7rJ8g8BYW5i9z2utoqmVLvZqvbOj6jNWus2hrslwV7ktly",
+		"_id": "6408a9b7e5491502f1a7352a",
+		"__v": 0
+	}
+}
+Response: 201 529.478 ms 
+
+Request: POST /auth/login at Wed Mar 08 2023 12:29:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Request Body:
+{
+	"email": "manoeloscar@gmail.com",
+	"password": "1234"
+}
+Response Body:
+{
+	"message": "Autenticação realizada com sucesso!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDhhOWI3ZTU0OTE1MDJmMWE3MzUyYSIsImlhdCI6MTY3ODI4OTM2M30.jWmzp4es5v6k7awk1wfp77zWb0uyzTQkG_gTfTi-2nU"
+}
+Response: 200 384.654 ms 
+
+Request: GET /download/image at Wed Mar 08 2023 12:29:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Response Body:
+{
+	"image": "/9j/4QLcRXhpZgAASUkqAAgAAAANAAABBAABAAAAEAoAAAEBBAABAAAAjAcAAA8BAgAIAAAAqgAAABABAgAJAAAAsgAAABIBAwABAAAACAAAABoBBQABAAAA3gAAABsBBQABAAAA5gAAACgBAwABAAAAAgAAADEBAgAOAAAAvAAAADIBAgAUAAAAygAAABMCAwABAAAAAQAAAGmHBAABAAAA7gAAACWIBAABAAAAbgIAAAAAAABzYW1zdW5nAFNNLUc1MzJNAABHNTMyTVVNVTFBU0ExADIwMjI6MTA6MzEgMTY6MTM6NDUASAAAAAEAAABIAAAAAQAAABIAmoIFAAEAAABWAgAAnYIFAAEAAABeAgAAIogDAAEAAAACAAAAJ4gDAAEAAAD6AAAAAJAHAAQAAAAwMjIwA5ACABQAAAAuAgAABJACABQAAABCAgAAB5IDAAEAAAACAAAACZIDAAEAAAAAAAAACpIFAAEAAABmAgAAfJIHAGIAAADMAQAAAaADAAEAAAABAAAAAqAEAAEAAAAQCgAAA6AEAAEAAACMBwAAAqQDAAEAAAAAAAAAA6QDAAEAAAAAAAAABaQDAAEAAAAZAAAABqQDAAEAAAAAAAAAAAAAAAcAAQAHAAQAAAAwMTAwAgAEAAEAAAAAIAEADAAEAAEAAAAAAAAAEAAFAAEAAABaAAAAQAAEAAEAAAAAAAAAUAAEAAEAAAABAAAAAAEDAAEAAAAAAAAAAAAAAAAAAAAAAAAAMjAyMjoxMDozMSAxNjoxMzo0NQAyMDIyOjEwOjMxIDE2OjEzOjQ1AAEAAAAKAAAAFgAAAAoAAAC+AAAAZAAAAAQAAQACAAIAAABTAAAAAgAFAAMAAACkAgAAAwACAAIAAABXAAAABAAFAAMAAAC8AgAAAAAAAAoAAAABAAAAMgAAAAEAAAAAAAAAAQAAACUAAAABAAAABAAAAAEAAAAHAAAAAQAAAP/gABB
+...
+Response: 200 14.332 ms 
+
+Request: GET /user/6408a9b7e5491502f1a7352a at Wed Mar 08 2023 12:29:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Response Body:
+{
+	"user": {
+		"_id": "6408a9b7e5491502f1a7352a",
+		"name": "Manoel Oscar",
+		"email": "manoeloscar@gmail.com",
+		"age": "35",
+		"image": "20221031_161345.jpg",
+		"__v": 0
+	}
+}
+Response: 200 75.467 ms 
+
+Request: GET /list/revenues at Wed Mar 08 2023 12:29:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": []
+}
+Response: 200 67.322 ms 
+
+Request: GET /list/debts at Wed Mar 08 2023 12:29:23 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Response Body:
+{
+	"result": []
+}
+Response: 200 84.853 ms 
